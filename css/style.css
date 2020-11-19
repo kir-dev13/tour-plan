@@ -8,6 +8,15 @@ body {
   color: #333333;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 1110px;
   margin: auto;
@@ -356,11 +365,11 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   background-color: #fff;
 }
 
-.header-top {
+.navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,12 +382,16 @@ template {
   padding: 40px 0;
 }
 
-.header__seacrh {
+.navbar-top__search {
   margin-right: auto;
   margin-left: 108px;
 }
 
-.search {
+.navbar-top__search .logo {
+  max-width: 177px;
+}
+
+.navbar .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,7 +401,7 @@ template {
   height: 40px;
 }
 
-.search__input {
+.navbar .search__input {
   text-transform: capitalize;
   width: 350px;
   height: 100%;
@@ -402,7 +415,7 @@ template {
   padding-right: 75px;
 }
 
-.search__button {
+.navbar .search__button {
   right: 0;
   height: 100%;
   width: 65px;
@@ -411,11 +424,16 @@ template {
   background-color: #EC1F46;
 }
 
-.search__button:active {
+.navbar .search__button-image {
+  width: 16px;
+  height: 16px;
+}
+
+.navbar .search__button:active {
   background-color: #f04e6d;
 }
 
-.user {
+.navbar .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,7 +443,7 @@ template {
   text-decoration: none;
 }
 
-.user__avatar {
+.navbar .user__avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -433,10 +451,30 @@ template {
      object-fit: cover;
 }
 
-.user__name {
+.navbar .user__name {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
   margin-left: 18px;
+}
+
+.navbar-menu {
+  background-color: #0A223D;
+  text-transform: uppercase;
+}
+
+.navbar-menu__list {
+  padding: 0;
+  height: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
