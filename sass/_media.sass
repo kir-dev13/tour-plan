@@ -14,6 +14,8 @@
   .container
     max-width: 700px
     width: 95%
+  .logo
+    width: 132px
   .navbar-top
     // height: 100px
     padding: 30px 0
@@ -25,6 +27,33 @@
     font-size: 12px
 
 @media ( max-width: 630px )
-  .navbar-top
-    &__user,&__search
+  .container
+    max-width: 540px
+  .navbar
+    &-menu
       display: none
+    &-top
+      &__user,&__search
+        display: none
+
+  .menu
+    &-btn
+      width: 16px
+      height: 11px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+
+@media ( max-width: 576px )
+  .container
+    max-width: 480px
+  .logo
+    width: 99px
