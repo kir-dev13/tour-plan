@@ -387,7 +387,7 @@ template {
   margin-left: 108px;
 }
 
-.navbar__menu-btn {
+.navbar-top__menu-btn {
   display: none;
 }
 
@@ -493,8 +493,10 @@ template {
     max-width: 740px;
   }
   .navbar-top__search {
-    width: 340px;
     margin: auto;
+  }
+  .search__input {
+    width: 340px;
   }
   .navbar-menu {
     font-size: 14px;
@@ -514,6 +516,8 @@ template {
   }
   .navbar-top__search {
     margin: 0;
+  }
+  .search__input {
     width: 300px;
   }
   .navbar-menu {
@@ -533,6 +537,7 @@ template {
     display: none;
   }
   .menu-btn {
+    padding: 0;
     width: 16px;
     height: 11px;
     display: -webkit-box;
