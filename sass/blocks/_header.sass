@@ -10,15 +10,26 @@
       margin-left: 108px
     &__menu-btn
       display: none
+.search
+  &__button
+    right: 0
+    height: 100%
+    width: 65px
+    position: absolute
+    border-radius: 0 6px 6px 0
+    &-image
+      width: 16px
+      height: 16px
 .logo
   max-width: 177px
-.search
+.form
   display: flex
   position: relative
   overflow: hidden
-  border-radius: 6px
+
   height: 40px
   &__input
+    border-radius: 6px
     text-transform: capitalize
     width: 350px
     height: 100%
@@ -30,19 +41,9 @@
     margin-left: 18px
     padding-left: 23px
     padding-right: 75px
-  &__button
-    right: 0
-    height: 100%
-    width: 65px
-    position: absolute
-    background-color: $primary
-      //border-radius: 0px 6px 6px 0px
-    &-image
-      width: 16px
-      height: 16px
+    &:focus
+      outline: none
 
-    &:active
-      background-color: lighten($primary, 10%)
 .user
   display: flex
   align-items: center
