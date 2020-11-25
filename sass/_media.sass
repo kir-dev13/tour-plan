@@ -22,9 +22,10 @@
   .hotel
     padding: 23px 0 60px 0
 
-  .hotel-info__hotel-grid
+  .hotel-grid
     flex-direction: column
-    align-items: center
+    align-items: stretch
+    flex-basis: auto
     width: 100%
 
     .slider
@@ -74,7 +75,7 @@
       .booking
         // width: 340px
         &__btn
-          padding: 13px 60px
+          padding: 13px 55px
 @media ( max-width: 630px )
   .container
     max-width: 540px
@@ -134,12 +135,14 @@
       margin-bottom: 20px
     .booking-map-wrapper
       width: 100%
-      align-items: strecth
+      // align-items: strecth
       flex-direction: column
+      flex-wrap: wrap
       justify-content: space-between
       .booking,.map
         width: 100%
-
+      .map
+        border: 1px solid red
 @media ( max-width: 576px )
   .container
     max-width: 480px

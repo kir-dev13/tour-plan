@@ -930,20 +930,22 @@ template {
   .hotel {
     padding: 23px 0 60px 0;
   }
-  .hotel-info__hotel-grid {
+  .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
     width: 100%;
   }
-  .hotel-info__hotel-grid .slider {
+  .hotel-grid .slider {
     width: 100%;
   }
-  .hotel-info__hotel-grid .slider__image {
+  .hotel-grid .slider__image {
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -994,7 +996,7 @@ template {
     margin-right: 20px;
   }
   .hotel-grid .booking-map-wrapper .booking__btn {
-    padding: 13px 60px;
+    padding: 13px 55px;
   }
 }
 
@@ -1078,19 +1080,21 @@ template {
   }
   .hotel-grid .booking-map-wrapper {
     width: 100%;
-    -webkit-box-align: strecth;
-        -ms-flex-align: strecth;
-            align-items: strecth;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .hotel-grid .booking-map-wrapper .booking, .hotel-grid .booking-map-wrapper .map {
     width: 100%;
+  }
+  .hotel-grid .booking-map-wrapper .map {
+    border: 1px solid red;
   }
 }
 
