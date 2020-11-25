@@ -68,7 +68,8 @@
     line-height: 18px
 
 .hotel-grid
-  // flex-basis: 100%
+  display: flex
+  justify-content: space-between
 .swiper-container
   width: 100%
   height: 450px
@@ -111,3 +112,59 @@
     &--prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+
+.booking-map-wrapper
+  width: 350px
+  display: flex
+  align-items: start
+.quick-booking,.phone-number
+  color: #fff
+  font-weight: 600
+  font-size: 18px
+  line-height: 25px
+.booking
+  width: 100%
+  font-family: 'Nunito', 'Muli', sans-serif
+  border-radius: 8px
+  color: #fff
+  padding: 28px
+  background-color: $bgc-dark
+  &__ico
+    width: 14px
+    height: 14px
+    margin-right: 9px
+  &__info
+    display: flex
+    justify-content: space-between
+  .price
+    display: flex
+    flex-direction: column
+    margin-bottom: 9px
+    &__start
+      font-size: 10px
+      line-height: 14px
+    &__tag
+      font-weight: 800
+      font-size: 24px
+      line-height: 33px
+    &__per-room
+      font-size: 12px
+      line-height: 16px
+  &__conditions
+    display: flex
+    flex-direction: column
+    font-size: 12px
+    line-height: 16px
+  &__call-center
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    display: flex
+    justify-content: space-between
+    margin-bottom: 17px
+  &__btn
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    padding: 13px 84px
+    border-radius: 4px

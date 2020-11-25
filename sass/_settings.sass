@@ -12,6 +12,14 @@ ul
 .btn
   border: none
   cursor: pointer
+  &:focus
+    outline: none
+
+.btn--primary
+  background-color: $primary
+  color: #fff
+  &:active
+    background-color: lighten($primary, 10%)
 
 a
   color: $text-color

@@ -6,7 +6,7 @@
     <title>Best Tour Plan - Best hotel booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -106,14 +106,16 @@
             <img class="stars-ico" src="img/star.svg" alt="star" />
           </div>
           <h1 class="hotel-name hotel-info__name">grand hilton hotel</h1>
-          <button class="btn offer hotel-info__offer">Flash Offer</button>
+          <button class="btn btn--primary offer hotel-info__offer">
+            Flash Offer
+          </button>
           <p class="hotel-description">
             Half-Board/ All Inclusive + Complimentary Activities + Child Stays
             Free
           </p>
         </div>
         <!-- /.hotel-info__left -->
-        <div class="btn raiting hotel-info__raiting">
+        <div class="btn btn--primary raiting hotel-info__raiting">
           <span class="raiting__text"> User Rattings </span>
           <span class="raiting__counter"> 4.5/5 </span>
         </div>
@@ -146,7 +148,42 @@
             </div>
             <!-- /.swiper-container -->
           </div>
+          <!--/. SLIDER -->
+          <div class="booking-map-wrapper">
+            <div class="booking">
+              <div class="booking__info">
+                <div class="price">
+                  <span class="price__start">price starts as</span>
+                  <strong class="price__pricetag">$ 8,500</strong>
+                  <span class="price__per-room">per room / night</span>
+                </div>
+                <div class="booking__conditions">
+                  <span>
+                    <img class="booking__ico" src="img/user.svg" alt="" /> 2 x
+                    Guests
+                  </span>
+                  <span>
+                    <img class="booking__ico" src="img/house.svg" alt="" /> 1 x
+                    Room
+                  </span>
+                </div>
+              </div>
+              <div class="booking__call-center">
+                <span class="quick-booking"> Quick Booking </span>
+                <a class="phone-number" href="tel:12100">
+                  <img class="booking__ico" src="img/phone.svg" alt="" />12100
+                </a>
+              </div>
+              <button class="btn btn--primary booking__btn">
+                View Other Options
+              </button>
+            </div>
+            <!-- /.booking -->
+            <div class="map"></div>
+            <!-- /.map -->
+          </div>
         </div>
+        <!-- hotel-grid -->
       </div>
     </section>
     <script src="js/swiper-bundle.min.js"></script>
