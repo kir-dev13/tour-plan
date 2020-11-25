@@ -828,6 +828,18 @@ template {
   overflow: hidden;
 }
 
+.subscribe {
+  background-image: url(../img/subscribe-image.jpg);
+  padding: 92px 0 93px 0;
+  background-size: cover;
+}
+
+.subscribe-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
