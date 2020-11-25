@@ -68,6 +68,7 @@
     line-height: 18px
 
 .hotel-grid
+  align-items: center
   display: flex
   justify-content: space-between
 .swiper-container
@@ -88,7 +89,7 @@
     object-fit: cover
 
 .slider
-  max-width: 728px
+  width: 728px
   // margin: auto
   &-button
     position: absolute
@@ -115,14 +116,18 @@
 
 .booking-map-wrapper
   width: 350px
+  align-self: stretch
   display: flex
-  align-items: start
+  // align-items: start
+  flex-direction: column
+  justify-content: space-between
 .quick-booking,.phone-number
   color: #fff
   font-weight: 600
   font-size: 18px
   line-height: 25px
 .booking
+  flex-direction: column
   width: 100%
   font-family: 'Nunito', 'Muli', sans-serif
   border-radius: 8px
@@ -136,10 +141,11 @@
   &__info
     display: flex
     justify-content: space-between
+    margin-bottom: 9px
   .price
     display: flex
     flex-direction: column
-    margin-bottom: 9px
+
     &__start
       font-size: 10px
       line-height: 14px
@@ -151,10 +157,13 @@
       font-size: 12px
       line-height: 16px
   &__conditions
+    // height: 40px
     display: flex
     flex-direction: column
+    justify-content: space-around
     font-size: 12px
     line-height: 16px
+
   &__call-center
     font-weight: 600
     font-size: 18px
@@ -163,8 +172,17 @@
     justify-content: space-between
     margin-bottom: 17px
   &__btn
+    text-align: center
+    width: 100%
+    min-height: 45px
     font-weight: 600
     font-size: 14px
     line-height: 19px
-    padding: 13px 84px
+    padding: 13px 83px
     border-radius: 4px
+
+.map
+  width: 347px
+  height: 213px
+  border-radius: 10px
+  overflow: hidden

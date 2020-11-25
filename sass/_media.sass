@@ -1,6 +1,11 @@
 @media ( max-width: 1200px )
   .container
     max-width: 960px
+  .slider
+    width: 590px
+    &__image
+      height: 100%
+
 @media ( max-width: 992px )
   .container
     max-width: 740px
@@ -11,9 +16,33 @@
   .search
     &__input
       width: 340px
-
   .navbar-menu
     font-size: 14px
+
+  .hotel
+    padding: 23px 0 60px 0
+  .hotel-info__hotel-grid
+    flex-direction: column
+    align-items: center
+    width: 100%
+
+    .slider
+      width: 100%
+      &__image
+        object-fit: cover
+  .hotel-grid
+    &__booking-map-wrapper
+      margin-top: 20px
+    .booking-map-wrapper
+      // margin: auto
+
+      flex-direction: row
+      justify-content: space-between
+      width: 100%
+      .booking
+        padding: 29px 23px 26px 23px
+        width: 360px
+
 @media ( max-width: 768px )
   .container
     max-width: 700px
@@ -32,6 +61,16 @@
     padding: 22px 0 23px 0
     font-size: 12px
 
+  .hotel-grid
+    .slider
+      height: 450px
+    &__booking
+      margin-right: 20px
+    .booking-map-wrapper
+      .booking
+        // width: 340px
+        &__btn
+          padding: 13px 60px
 @media ( max-width: 630px )
   .container
     max-width: 540px
@@ -60,6 +99,8 @@
         background-color: $text-color
 
   .hotel
+
+    padding: 23px 0 40px 0
     &-name
       flex-basis: 100%
     &-info
@@ -75,6 +116,25 @@
     flex-basis: auto
   .hotel-flex-wrapper
     justify-content: space-between
+
+  .slider
+    height: 278px
+  .hotel-grid
+    .swiper-container
+      height: 278px
+    .slider
+      height: 100%
+    //   &__image
+    //     height: 278px
+    .booking
+      margin-bottom: 20px
+    .booking-map-wrapper
+      width: 100%
+      align-items: strecth
+      flex-direction: column
+      justify-content: space-between
+      .booking,.map
+        width: 100%
 
 @media ( max-width: 576px )
   .container
