@@ -1,0 +1,46 @@
+.reviews
+    padding: 40px 0 70px 0
+    &__title
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+.reviews-slider
+    // width: 728px
+    // margin: auto
+    &__profile
+        background-color:
+        text-align: center
+    &__avatar
+        width: 90px
+        height: 90px
+        object-fit: cover
+        border-radius: 50%
+    &__text
+        font-size: 12px
+        line-height: 160%
+
+        text-align: justify
+    &__button
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 3
+        width: 30px
+        height: 30px
+        border: none
+        cursor: pointer
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 10px
+        background-color: red
+        &:focus
+            outline: none
+        &--next
+            right: 18px
+            background-image: url(../img/arrow-next.svg)
+
+        &--prev
+            left: 18px
+            background-image: url(../img/arrow-prev.svg)

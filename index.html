@@ -123,30 +123,53 @@
         </div>
         <!-- /.hotel-info__righr -->
         <div class="hotel-grid hotel-info__hotel-grid">
-          <div class="slider">
-            <div class="swiper-container hotel-slider hotel__slider">
+          <div class="slider hotel-slider">
+            <div class="hotel-swiper-container swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img class="slider__image" src="img/slide-1.png" alt="" />
+                <div class="swiper-slide hotel-swiper-slide">
+                  <img
+                    class="hotel-slider__image"
+                    src="img/slide-1.png"
+                    alt=""
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img class="slider__image" src="img/slide-2.jpg" alt="" />
+                <div class="swiper-slide hotel-swiper-slide">
+                  <img
+                    class="hotel-slider__image"
+                    src="img/slide-2.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img class="slider__image" src="img/slide-3.jpg" alt="" />
+                <div class="swiper-slide hotel-swiper-slide">
+                  <img
+                    class="hotel-slider__image"
+                    src="img/slide-3.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img class="slider__image" src="img/slide-4.jpg" alt="" />
+                <div class="swiper-slide hotel-swiper-slide">
+                  <img
+                    class="hotel-slider__image"
+                    src="img/slide-4.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img class="slider__image" src="img/slide-5.jpg" alt="" />
+                <div class="swiper-slide hotel-swiper-slide">
+                  <img
+                    class="hotel-slider__image"
+                    src="img/slide-5.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
               <!-- If we need navigation buttons -->
-              <button class="slider-button slider-button--prev"></button>
-              <button class="slider-button slider-button--next"></button>
+              <button
+                class="hotel-slider-button hotel-slider-button--prev"
+              ></button>
+              <button
+                class="hotel-slider-button hotel-slider-button--next"
+              ></button>
             </div>
             <!-- /.swiper-container -->
           </div>
@@ -192,7 +215,7 @@
       <div class="subscribe-wrapper container">
         <div class="subscribe__text">
           <span class="subscribe__subtitle"> subscribe to our </span>
-          <strong class="subscribe__title">Newsletter</strong>
+          <h3 class="subscribe__title">Newsletter</h3>
         </div>
         <form action="#" class="form subscribe__form">
           <input
@@ -206,39 +229,59 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews-title">What people thinks about us</h2>
+        <h2 class="reviews__title">What people thinks about us</h2>
 
-        <div class="reviews-slider">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <div class="reviews-slide">
-              <div class="reviews-slider__item-1">
-                <div class="reviews-slider__profile">
-                  <img
-                    src="img/reviews-avatar-1.jpg"
-                    alt="Photo: Megan Fox"
-                    class="reviews-slider__avatar"
-                  />
-                  <h3 class="reviews-slider__username">Megan Fox</h3>
-                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
-                  <div class="stars review-raiting">
-                    <img class="stars-ico" src="img/star.svg" alt="star" />
-                    <img class="stars-ico" src="img/star.svg" alt="star" />
-                    <img class="stars-ico" src="img/star.svg" alt="star" />
-                    <img class="stars-ico" src="img/star.svg" alt="star" />
-                    <img class="stars-ico" src="img/star.svg" alt="star" />
+        <div class="reviews-slider slider">
+          <div class="reviews-swiper-container swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide reviews-swiper-slide">
+                <div class="reviews-slider__item">
+                  <div class="reviews-slider__profile">
+                    <img
+                      src="img/reviews-avatar-1.jpg"
+                      alt="Photo: Megan Fox"
+                      class="reviews-slider__avatar"
+                    />
+                    <h3 class="reviews-slider__username">Megan Fox</h3>
+                    <span class="reviews-slider__date"
+                      >Stayed 18 Nov, 2019</span
+                    >
+                    <div class="stars review-raiting">
+                      <img class="stars-ico" src="img/star.svg" alt="star" />
+                      <img class="stars-ico" src="img/star.svg" alt="star" />
+                      <img class="stars-ico" src="img/star.svg" alt="star" />
+                      <img class="stars-ico" src="img/star.svg" alt="star" />
+                      <img class="stars-ico" src="img/star.svg" alt="star" />
+                    </div>
+                    <!-- stars-raiting -->
                   </div>
-                  <!-- stars-raiting -->
+                  <!-- /.reviews-slider__profile -->
+                  <p class="reviews-slider__text">
+                    It was very nice hotel with cleanliness. Staff behavior was
+                    good and polite. They welcome us very well. Issue was only
+                    that Lift was not in working and we were allotted to 3rd
+                    floor and amenities articles were in corner of gallery which
+                    were giving bad feeling. Breakfast was good and support of
+                    the staff was also very nice. Location is not good as per
+                    atmosphere, it is very nearby most of the popular places but
+                    self location in a narrow street is not good. Overall it was
+                    a good experience and could recommend.
+                  </p>
                 </div>
-                <!-- /.reviews-slider__profile -->
+                <!-- /.reviews-slider__item -->
               </div>
-              <!-- /.reviews-slider__item -->
+              <!-- swiper-slide -->
             </div>
-            <!-- swiper-slide -->
+            <!-- swiper-wrapper -->
+            <button
+              class="reviews-slider__button reviews-slider__button--prev"
+            ></button>
+            <button
+              class="reviews-slider__button reviews-slider__button--next"
+            ></button>
           </div>
-          <!-- swiper-wrapper -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <!-- reviews-swiper-container -->
         </div>
         <!-- reviews-slider -->
       </div>
