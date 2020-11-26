@@ -832,8 +832,10 @@ template {
 .subscribe {
   position: relative;
   background-image: url(../img/subscribe-image.jpg);
-  padding: 92px 0 93px 0;
+  padding: 98px 0 87px 0;
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   z-index: 1;
 }
 
@@ -861,15 +863,6 @@ template {
           align-items: center;
 }
 
-.subscribe__form {
-  height: 55px;
-  max-width: 350px;
-}
-
-.subscribe__input {
-  border-radius: 4px 0 0 4px;
-}
-
 .subscribe__text {
   color: #fff;
   display: -webkit-box;
@@ -894,12 +887,28 @@ template {
   text-transform: uppercase;
 }
 
+.subscribe__form {
+  min-height: 55px;
+  max-width: 350px;
+}
+
+.subscribe__input {
+  border-radius: 4px 0 0 4px;
+  padding-right: 10px;
+}
+
 .subscribe__btn {
+  text-align: center;
+  vertical-align: center;
   padding: 20px;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   border-radius: 0 4px 4px 0;
+}
+
+.swiper-button--prev-1 {
+  background-color: red;
 }
 
 @media (max-width: 1200px) {
@@ -998,6 +1007,9 @@ template {
   .hotel-grid .booking-map-wrapper .booking__btn {
     padding: 13px 55px;
   }
+  .subscribe {
+    padding: 92px 0 93px 0;
+  }
 }
 
 @media (max-width: 630px) {
@@ -1093,8 +1105,24 @@ template {
   .hotel-grid .booking-map-wrapper .booking, .hotel-grid .booking-map-wrapper .map {
     width: 100%;
   }
-  .hotel-grid .booking-map-wrapper .map {
-    border: 1px solid red;
+  .subscribe {
+    padding: 76px 0 83px 0;
+  }
+  .subscribe-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .subscribe-wrapper .subscribe__title {
+    margin-top: 5px;
+    margin-bottom: 37px;
+  }
+  .subscribe-wrapper .form__input {
+    margin-left: 0;
   }
 }
 
@@ -1104,6 +1132,12 @@ template {
   }
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 390px) {
+  .subscribe__form {
+    width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
