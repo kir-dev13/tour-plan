@@ -6,41 +6,91 @@
         line-height: 45px
         text-align: center
         text-transform: uppercase
-.reviews-slider
-    // width: 728px
-    // margin: auto
-    &__profile
-        background-color:
-        text-align: center
-    &__avatar
-        width: 90px
-        height: 90px
-        object-fit: cover
-        border-radius: 50%
-    &__text
-        font-size: 12px
-        line-height: 160%
+        margin-bottom: 70px
+    &-slider
+        // коммент
 
-        text-align: justify
-    &__button
-        position: absolute
-        top: 50%
-        transform: translateY(-50%)
-        z-index: 3
-        width: 30px
-        height: 30px
-        border: none
-        cursor: pointer
-        background-repeat: no-repeat
-        background-position: center
-        background-size: 10px
-        background-color: red
-        &:focus
-            outline: none
-        &--next
-            right: 18px
-            background-image: url(../img/arrow-next.svg)
+        &__item
+            background-color: #fff
+            border-radius: 8px
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: auto
+            margin-top: 45px
+            width: 730px
+            padding: 0 62px 30px
+            position: relative
+            &::before
+                content: ''
+                background-image: url(../img/quote-left.svg)
+                background-repeat: no-repeat
+                width: 70px
+                height: 47px
+                position: absolute
+                top: 13px
+                left: 62px
+            &::after
+                content: ''
+                background-image: url(../img/quote-left.svg)
+                background-repeat: no-repeat
+                width: 70px
+                height: 47px
+                position: absolute
+                top: 118px
+                right: 62px
+                transform: rotate(180deg)
+        &__profile
+            text-align: center
+            margin-bottom: 30px
+        &__avatar
+            margin-top: -45px
+            width: 90px
+            height: 90px
+            object-fit: cover
+            border-radius: 50%
+            margin-bottom: 9px
+        &__username
+            margin-top: 0
+            margin-bottom: 10px
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            color: $primary
+        &__date
+            font-size: 10px
+            line-height: 13px
+            margin-bottom: 4px
+        &__raiting
 
-        &--prev
-            left: 18px
-            background-image: url(../img/arrow-prev.svg)
+        &__text
+            max-width: 537px
+            margin: 0
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 160%
+            text-align: justify
+        &__button
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            z-index: 3
+            width: 30px
+            height: 30px
+            border: none
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            background-color: transparent
+            // background-size: 10px
+            // background-color: red
+            &:focus
+                outline: none
+            &--next
+                right: 18px
+                background-image: url(../img/reviews-slider-arrow-next.svg)
+            &--prev
+                transform: scale(-1, -1) translateY(50%)
+                left: 18px
+                background-image: url(../img/reviews-slider-arrow-next.svg)
