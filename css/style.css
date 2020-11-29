@@ -493,6 +493,9 @@ template {
 .navbar-menu {
   background-color: #0A223D;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
   padding: 31px 0;
 }
 
@@ -1147,6 +1150,126 @@ template {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+}
+
+.packages {
+  padding-bottom: 70px;
+}
+
+.packages-ico {
+  width: 14px;
+  height: 14px;
+  margin-right: 14px;
+}
+
+.packages__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  height: 1030px;
+  -ms-grid-rows: 500px 500px;
+      grid-template-rows: 500px 500px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.packages__card {
+  background-color: #0A223D;
+  color: #F5FAFE;
+}
+
+.packages__card--2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+.packages-card-content {
+  height: 50%;
+  padding: 30px 21px 25px 32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[6];
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: repeat(6, auto)/1fr 1fr;
+}
+
+.packages-card__title {
+  margin-bottom: 12px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.packages-card__description {
+  color: #fff;
+  margin-top: 11px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages-card__priceoff {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.packages-card__price {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.packages-card__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  padding: 11px 27px;
+  border-radius: 4px;
+}
+
+.packages-card--1__image {
+  background-color: #fff;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.packages-card--2__image {
+  width: 50%;
+  height: 100%;
+}
+
+.packages-card-large {
+  border: 1px solid red;
 }
 
 @media (max-width: 1200px) {
