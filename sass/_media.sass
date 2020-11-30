@@ -63,7 +63,10 @@
       // justify-content: flex-start
     &__card
       // margin-bottom: 20px
-
+  .packages
+    &-wrapper
+      grid-template-rows: repeat(3, 500px)
+      grid-template-columns: 1fr 1fr
 @media ( max-width: 768px )
   .container
     max-width: 700px
@@ -112,6 +115,15 @@
           transform: scale(-1, -1) translate(50%, 50%)
           margin-left: -65px
 
+@media ( max-width: 655px )
+  .packages
+    &-wrapper
+    &-card
+      &--1,&--2
+        &__content
+          padding: 20px 21px 15px 32px
+        &__button
+          padding: 11px 20px
 @media ( max-width: 630px )
   .container
     max-width: 540px
@@ -193,6 +205,16 @@
   .activities
     padding-top: 40px
     padding-bottom: 60px
+  .packages
+    &-wrapper
+    &-card
+      &--1,&--2
+        &__title
+          margin-bottom: 7px
+        &__text
+          margin-bottom: 12px
+        &__button
+          padding: 11px 15px
 @media ( max-width: 576px )
   .container
     max-width: 480px
@@ -202,6 +224,25 @@
     padding-top: 30px
   .card
     width: 100%
+  .packages
+    &-wrapper
+      grid-template-rows: auto
+      grid-template-columns: 1fr
+    &-card
+      &--2
+        display: flex
+        flex-direction: column
+        grid-column: 1 / 1
+        // max-heigh: 300px
+        &__image
+          width: 100%
+          height: 50%
+        &__content
+          width: 100%
+          flex-basis: auto
+      &--1
+        &__content
+          grid-template-rows: auto
 @media ( max-width: 390px )
   .navbar-top
     height: 70px
