@@ -1189,12 +1189,25 @@ template {
 
 .packages-card--1__image-block {
   height: 50%;
+  position: relative;
 }
 
 .packages-card--1__image {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.packages-card--1__offer {
+  top: 26px;
+  left: 0;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  position: absolute;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 0 4px 4px 0;
 }
 
 .packages-card--1__content {
@@ -1275,6 +1288,7 @@ template {
 .packages-card--2__image-block {
   width: 50%;
   height: 100%;
+  position: relative;
 }
 
 .packages-card--2__image {
@@ -1282,6 +1296,18 @@ template {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.packages-card--2__offer {
+  top: 26px;
+  left: 0;
+  padding: 8px 12px;
+  background-color: #EC1F46;
+  position: absolute;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 0 4px 4px 0;
 }
 
 .packages-card--2__content {
