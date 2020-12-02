@@ -21,3 +21,11 @@ var reviewSlider = new Swiper(".reviews-swiper-container", {
     onlyInViewport: false,
   },
 });
+
+let menuButton = document.querySelector(".menu-btn");
+menuButton.addEventListener("click", function () {
+  console.log("клик");
+  document
+    .querySelector(".navbar-menu")
+    .classList.toggle("navbar-menu--visible");
+});

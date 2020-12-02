@@ -6,11 +6,14 @@
     align-items: center
     justify-content: space-between
     padding: 40px 0
+
     &__search
       margin-right: auto
       margin-left: 108px
     &__menu-btn
       display: none
+      border: none
+      outline: none
 .search
   &__button
     right: 0
@@ -64,7 +67,10 @@
   background-color: $bgc-dark
   text-transform: uppercase
   padding: 31px 0
-
+  &__item
+    &--mobile
+      &-visible
+        display: none
   &__list
     padding: 0
     // height: 80px
