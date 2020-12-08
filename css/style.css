@@ -1181,7 +1181,7 @@ template {
 }
 
 .footer__icon-wrapper {
-  width: 40px;
+  min-width: 40px;
 }
 
 .footer-wrapper {
@@ -1293,6 +1293,7 @@ template {
 }
 
 .footer__link {
+  margin-top: 0;
   color: inherit;
   font-size: 14px;
   line-height: 160%;
@@ -1329,6 +1330,7 @@ template {
   min-height: 50px;
   border-radius: 4px;
   padding: 18px;
+  margin-bottom: 10px;
 }
 
 .footer__info {
@@ -1873,10 +1875,6 @@ template {
   .activities__title {
     font-size: 18px;
     line-height: 23px;
-  }
-  .footer-wrapper {
-    -ms-grid-columns: 320px;
-        grid-template-columns: 320px;
   }
   .footer__social-network {
     max-width: 250px;
