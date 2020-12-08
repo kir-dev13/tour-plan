@@ -1614,6 +1614,30 @@ template {
   .container {
     max-width: 540px;
   }
+  .navbar--mobile-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 101;
+  }
+  .navbar-top__search--mobile-hidden, .navbar-top__user--mobile-hidden {
+    display: none;
+  }
+  .navbar-top__search--mobile-visible, .navbar-top__user--mobile-visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-top__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .navbar-menu {
     display: none;
   }
@@ -1827,7 +1851,14 @@ template {
 }
 
 @media (orientation: landscape) and (max-height: 480px) {
-  .modal__dialog--visible {
+  .modal__dialog {
+    max-height: 100%;
+    overflow-y: auto;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 480px) {
+  --visible {
     max-height: 100%;
     overflow-y: auto;
   }

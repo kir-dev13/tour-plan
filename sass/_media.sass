@@ -149,6 +149,24 @@
   .container
     max-width: 540px
   .navbar
+    &--mobile
+      &-fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 101
+    &-top
+      &__search, &__user
+        &--mobile
+          &-hidden
+            display: none
+          &-visible
+            display: flex
+      &__user
+        flex-direction: column
+        justify-content: center
+
     &-menu
       display: none
     &-top
@@ -270,6 +288,8 @@
   .navbar-top
     height: 70px
   .container
+    // margin: auto
+    // width: 100%
     padding: 0 20px
   .subscribe__form
     width: 250px
@@ -295,6 +315,11 @@
 @media (orientation: landscape) and ( max-height: 480px )
   .modal
     &__dialog
-      &--visible
-        max-height: 100%
-        overflow-y: auto
+      max-height: 100%
+      overflow-y: auto
+@media (orientation: landscape) and ( max-height: 480px )
+  .navbar
+    &-menu
+  &--visible
+    max-height: 100%
+    overflow-y: auto
