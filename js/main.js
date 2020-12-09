@@ -42,11 +42,12 @@ $(document).ready(function () {
 
   modalButton.on("click", openModal);
   closeButton.on("click", closeModal);
-});
 
-let menuButton = document.querySelector(".menu-btn");
-menuButton.addEventListener("click", function () {
-  document
-    .querySelector(".navbar-menu")
-    .classList.toggle("navbar-menu--visible");
+  let menuButton = document.querySelector(".menu-btn");
+  menuButton.addEventListener("click", function () {
+    document
+      .querySelector(".navbar-menu")
+      .classList.toggle("navbar-menu--visible");
+  });
+  AOS.init();
 });
