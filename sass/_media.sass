@@ -10,7 +10,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 
 @media ( max-width: 992px )
   .container
@@ -87,7 +88,8 @@
     &__legal
       grid-column: span 2
     &__input
-      flex-basis: 49%
+      &-group
+        flex-basis: 49%
     &__contact
       &-details
         grid-row: 3
@@ -145,7 +147,8 @@
           margin-left: -65px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media ( max-width: 630px )
   body
     padding-top: 78px
@@ -309,8 +312,12 @@
       max-width: 83%
       padding: 33px 45px
 @media ( max-width: 390px )
-  .navbar-top
-    height: 70px
+  .navbar
+    &-top
+      height: 70px
+    &-menu
+      &--visible
+        top: 70px
   .container
     // margin: auto
     // width: 100%

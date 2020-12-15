@@ -50,4 +50,24 @@ $(document).ready(function () {
       .classList.toggle("navbar-menu--visible");
   });
   AOS.init();
+
+  //Обработка форм
+  $(".send-form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please, enter your name",
+          minlength: "Name must be longer than one symbol",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "The phone number is required",
+        },
+      },
+    });
+  });
 });

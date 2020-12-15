@@ -65,6 +65,10 @@ img {
   padding: 18px 23px;
 }
 
+.invalid {
+  color: tomato;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1314,6 +1318,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1398,16 +1406,17 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__button {
+  margin-top: 15px;
   min-width: 160px;
   min-height: 50px;
   font-weight: bold;
@@ -1445,7 +1454,7 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1547,7 +1556,7 @@ template {
   .footer__legal {
     grid-column: span 2;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
@@ -1617,7 +1626,7 @@ template {
             transform: scale(-1, -1) translate(50%, 50%);
     margin-left: -65px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1865,6 +1874,9 @@ template {
 @media (max-width: 390px) {
   .navbar-top {
     height: 70px;
+  }
+  .navbar-menu--visible {
+    top: 70px;
   }
   .container {
     padding: 0 20px;
