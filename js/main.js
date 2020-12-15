@@ -70,4 +70,6 @@ $(document).ready(function () {
       },
     });
   });
+  // Маска
+  $('input[name="phone"]').mask("+7 (000) 000-0000");
 });
