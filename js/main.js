@@ -66,6 +66,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "The phone number is required",
+          minlength: "Phone number must be longer than eight digits",
         },
       },
     });

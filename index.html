@@ -255,13 +255,19 @@
           <span class="subscribe__subtitle"> subscribe to our </span>
           <h3 class="subscribe__title">Newsletter</h3>
         </div>
-        <form action="#" class="form subscribe__form">
-          <input
-            type="email"
-            class="form__input subscribe__input"
-            placeholder="Your email address"
-          />
-          <button class="btn btn--primary subscribe__btn">Send</button>
+        <form action="#" class="form subscribe__form send-form">
+          <div class="subscribe__input-group">
+            <input
+              type="email"
+              class="form__input subscribe__input"
+              placeholder="Your email address"
+              name="email"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn--primary subscribe__btn">
+            Send
+          </button>
         </form>
       </div>
     </section>
@@ -624,6 +630,7 @@ quest"
                 placeholder="Your Full name"
                 name="name"
                 required
+                minlength="2"
               />
             </div>
             <div class="footer__input-group">
@@ -633,6 +640,7 @@ quest"
                 placeholder="Phone Number"
                 name="phone"
                 required
+                minlength="15"
               />
             </div>
             <textarea
@@ -676,6 +684,7 @@ quest"
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="15"
           />
           <input
             type="email"
@@ -703,6 +712,7 @@ quest"
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    ы
     <script src="js/bgscroll.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/aos.js"></script>
