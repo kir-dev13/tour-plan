@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Best hotel booking</title>
-    <link rel="preload" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -21,10 +21,10 @@
     <script defer src="js/bgscroll.js"></script>
     <script defer src="js/parallax.js"></script>
     <script defer src="js/aos.js"></script>
-    <script
+    <!-- <script
       defer
       src="https://api-maps.yandex.ru/2.1/?apikey=8aee3e46-5c2e-4c6e-87a5-28c7351d88c7&lang=ru_RU"
-    ></script>
+    ></script> -->
     <script defer src="js/yandex-map.js"></script>
     <script defer src="js/main.js"></script>
   </head>
@@ -256,7 +256,10 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div id="map" class="map"></div>
+            <div class="ymap-container">
+              <div class="loader loader-default"></div>
+              <div id="map" class="map"></div>
+            </div>
             <!-- /.map -->
           </div>
         </div>
