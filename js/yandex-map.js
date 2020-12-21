@@ -43,7 +43,7 @@ function waitForTilesLoad(layer) {
     let tc = getTileContainer(layer),
       readyAll = true;
     tc.tiles.each(function (tile, number) {
-      if (!tileIsReady()) {
+      if (!tile.isReady()) {
         readyAll = false;
       }
     });
@@ -61,7 +61,7 @@ function getTileContainer(layer) {
   for (let k in layer) {
     if (layer.hasOwnProperty(k)) {
       if (
-        layer[k] instanceof ymaps.layer.tileContainer.CnavasContainer ||
+        layer[k] instanceof ymaps.layer.tileContainer.CanvasContainer ||
         layer[k] instanceof ymaps.layer.tileContainer.DomContainer
       ) {
         return layer[k];
@@ -96,7 +96,7 @@ let ymap = function () {
   $(".ymap-container").mouseenter(function () {
     if (!checkIfLoad) {
       checkIfLoad = true;
-      spinner.addClass("loader-is-active");
+      spinner.addClass("loader-d");
       loadScript(
         "https://api-maps.yandex.ru/2.1/?apikey=8aee3e46-5c2e-4c6e-87a5-28c7351d88c7&lang=ru_RU",
         function () {
