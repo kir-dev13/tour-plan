@@ -97,6 +97,18 @@
       &-form
         grid-row: 4
         grid-column: span 5
+  .bottom-line
+    margin-top: 63px
+    grid-column-start: 1
+    grid-column-end: 7
+    &__list
+      justify-content: flex-start
+      // margin-left: 0
+      // grid-column-start: 1
+      // grid-column-end: 4
+    &__item
+      margin-left: 0
+      margin-right: 20px
 @media ( max-width: 768px )
   .container
     max-width: 700px
@@ -281,6 +293,7 @@
   .card
     width: 100%
   .footer
+    padding-bottom: 21px
     &-wrapper
       grid-template-columns: 1fr
     &__logo-block
@@ -305,11 +318,26 @@
       &-form
         grid-row: 7
         grid-column: 1
-
+    &__contact-div
+      justify-content: space-between
+      flex-direction: column
+      align-items: start
+    &__button
+      margin-top: 15px
+      order: 2
   .modal
     &__dialog
       max-width: 83%
       padding: 33px 45px
+  .bottom-line
+    margin-top: -20px
+    display: flex
+    flex-wrap: wrap
+    &__list
+      flex-basis: 100%
+    &__payments
+      margin-top: 10px
+      margin-left: 0
 @media ( max-width: 390px )
   .navbar
     &-top
@@ -341,7 +369,11 @@
     &__dialog
       max-width: 90%
       padding: 33px 25px
-
+  .bottom-line
+    &__list
+      flex-direction: column
+    &__item
+      margin-bottom: 10px
 @media (orientation: landscape) and ( max-height: 480px )
   .modal
     &__dialog
