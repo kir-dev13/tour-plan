@@ -126,7 +126,8 @@
       width: 300px
   .navbar-menu
     padding: 22px 0 23px 0
-    font-size: 12px
+    &__link
+      font-size: 12px
 
   .hotel-grid
     .hotel-slider
@@ -187,6 +188,9 @@
 
     &-menu
       display: none
+      &__user
+        flex-direction: column
+        justify-content: center
       &__list
         display: flex
         flex-direction: column
@@ -296,6 +300,7 @@
     padding-bottom: 21px
     &-wrapper
       grid-template-columns: 1fr
+      // grid-gap: 0
     &__logo-block
       grid-row: 1
       grid-column: 1

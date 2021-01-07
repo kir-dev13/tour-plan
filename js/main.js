@@ -33,11 +33,13 @@ $(document).ready(function () {
   function openModal() {
     modalOverlay.addClass("modal__overlay--visible");
     modaldialog.addClass("modal__dialog--visible");
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
   }
   function closeModal(event) {
     event.preventDefault();
     modalOverlay.removeClass("modal__overlay--visible");
     modaldialog.removeClass("modal__dialog--visible");
+    document.getElementsByTagName("body")[0].style.overflow = "auto";
   }
 
   modalButton.on("click", openModal);
@@ -45,10 +47,18 @@ $(document).ready(function () {
 
   let menuButton = document.querySelector(".menu-btn");
   menuButton.addEventListener("click", function () {
-    document
-      .querySelector(".navbar-menu")
-      .classList.toggle("navbar-menu--visible");
+    // document
+    //   .querySelector(".navbar-menu")
+    //   .classList.toggle("navbar-menu--visible");
+    let navbarMenu = document.querySelector(".navbar-menu");
+    navbarMenu.classList.toggle("navbar-menu--visible");
+    if (navbarMenu.classList.contains("navbar-menu--visible")) {
+      document.getElementsByTagName("body")[0].style.overflow = "hidden";
+    } else {
+      document.getElementsByTagName("body")[0].style.overflow = "auto";
+    }
   });
+
   AOS.init();
 
   //Обработка форм
