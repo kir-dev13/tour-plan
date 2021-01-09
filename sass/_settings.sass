@@ -20,12 +20,16 @@ ul
   border-radius: 6px
   background-color: $primary
   color: #fff
-  &:active
+  &:hover
     background-color: lighten($primary, 10%)
+  &:active
+    background-color: darken($primary, 20%)
 
 a
   color: $text-color
   text-decoration: none
+  &:hover
+    text-decoration: underline
 
 img
   width: 100%
@@ -48,3 +52,4 @@ img
 .invalid
   color: tomato
   z-index: 200
+  // font-size: 12px
