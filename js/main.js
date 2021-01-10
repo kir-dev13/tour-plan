@@ -59,8 +59,6 @@ $(document).ready(function () {
     }
   });
 
-  AOS.init();
-
   //Обработка форм
   $(".send-form").each(function () {
     $(this).validate({
