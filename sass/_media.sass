@@ -132,6 +132,8 @@
     &__search
       width: 340px
       margin-left: 50px
+    &__user
+      // margin-right: 10px
   .search
     &__input
       width: 300px
@@ -161,12 +163,8 @@
       justify-content: space-between
     &__text
       margin-left: 0
-    &__input-group
+    &__form
       margin-right: 0
-      margin-left: 40px
-      // width: 800px
-    &__input
-      max-width: 350px
 
   .reviews
     &__title
@@ -190,23 +188,55 @@
           margin-left: -65px
   .activities
     padding-top: 45px
-    padding-bottom: 40px
+    padding-bottom: 50px
     &__card
       min-height: 260px
-  // .card
-  //   &__title
-  //     margin-top: 120px
+      margin-bottom: 15px
+  .card
+    padding-bottom: 30px
+    &__title
+      max-width: 70%
 
   //   &__button
   //     margin-top: 20px
 
   .footer
-    padding-top: 50px
+    padding-top: 45px
+    padding-bottom: 25px
+    &-wrapper
+      grid-template-columns: 3fr
     &__logo
       width: 60%
+    &__title--inline
+      margin-right: 40px
+    &__categories
+      grid-column: span 2
+    &__aditional
+      grid-column-start: 3
+      grid-row-start: 2
+      grid-column-end: 5
+    &__legal
+      grid-column-start: 5
+      grid-column-end: 7
+      grid-row-start: 2
+    &__social
+      &-network
+        margin-top: 40px
+        grid-column-start: 2
+        grid-column: span 2
+    &__contact-details
+      margin-top: 25px
+    &__ul
+      margin-left: 10px
+    &__contact-form
+      width: 90%
+    &__form
+      justify-content: space-between
     &__input
       &-group
-        flex-basis: 100%
+        flex-basis: 47%
+  .bottom-line
+    margin-top: 15px
 @media ( max-width: 630px )
   body
     padding-top: 78px
