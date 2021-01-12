@@ -40,16 +40,34 @@
         right: 18px
         top: 17px
     &__input
-        color: #BDBDBD
+        color: #000
         width: 100%
         margin-top: 15px
         font-size: 12px
+        &::-webkit-input-placeholder
+            font-size: 12px
+            line-height: 15px
+            color: #BDBDBD
+        &::-moz-placeholder
+            color: #BDBDBD
+            font-size: 12px
+            line-height: 15px
+        &:-ms-input-placeholder
+            color: #BDBDBD
+            font-size: 12px
+            line-height: 15px
     &__message
-        color: #BDBDBD
+        color: #000
         width: 100%
         min-height: 120px
         margin-top: 15px
         font-size: 12px
+        &::-webkit-input-placeholder
+            color: #BDBDBD
+        &::-moz-placeholder
+            color: #BDBDBD
+        &:-ms-input-placeholder
+            color: #BDBDBD
     &__button
         margin-top: 8px
         min-width: 160px
