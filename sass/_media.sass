@@ -204,26 +204,37 @@
     padding-top: 45px
     padding-bottom: 25px
     &-wrapper
-      grid-template-columns: 3fr
+      grid-template-columns: repeat(7, 1fr)
+      grid-column-gap: 0
     &__logo
       width: 60%
+      grid-column-start: 1
+      grid-column-end: 2
     &__title--inline
       margin-right: 40px
     &__categories
-      grid-column: span 2
+      // grid-column: span 2
+      grid-column-start: 1
+      grid-column-end: 3
     &__aditional
+      // justify-self: start
+      // margin-left: 40px
       grid-column-start: 3
+      // grid-column: span 2
       grid-row-start: 2
-      grid-column-end: 5
+      grid-column-end: 6
     &__legal
-      grid-column-start: 5
-      grid-column-end: 7
+      justify-self: start
+      grid-column-start: 6
+      grid-column-end: 8
       grid-row-start: 2
     &__social
       &-network
+        // margin-right: 35px
         margin-top: 40px
-        grid-column-start: 2
-        grid-column: span 2
+        grid-column-start: 3
+        grid-column-end: 6
+        // grid-column: span 3
     &__contact-details
       margin-top: 25px
     &__ul
@@ -360,8 +371,27 @@
   .activities
     padding-top: 40px
     padding-bottom: 60px
-  .btn,.link
-    cursor: default
+  // .btn,.link
+  //   cursor: default
+  .footer
+    &-wrapper
+      display: flex
+      flex-direction: column
+      align-items: start
+    &__logo-block
+      order: -4
+    &__social
+      &-network
+        align-self: start
+        order: -3
+        // margin-left: -20px
+    &__contact-form
+      width: 100%
+    &__form
+      // flex-basis: 100%
+    &__input
+      &-group
+        flex-basis: 100%
 @media ( max-width: 576px )
   .container
     max-width: 480px
@@ -438,35 +468,160 @@
   .container
     // margin: auto
     // width: 100%
-    padding: 0 20px
-  .subscribe__form
-    width: 250px
-  .activities
+    padding: 0 15px
+  .breadcrump
+    &-list
+      padding: 10px 0
+
+  .hotel
+    margin-top: 10px
+    padding-bottom: 50px
+    &-name
+      font-size: 22px
+    &-swiper-container
+      margin-top: 15px
+      max-height: 170px
+    &-grid
+      &__booking
+        margin-top: -6px
+        max-height: 200px
+        padding: 5px
+      .booking-map-wrapper
+        .booking
+          padding: 25px 10px
+  .booking
+    &__info
+      margin-bottom: 5px
+    &__conditions
+      margin-top: 5px
+      justify-content: start
+
+    &__btn
+      height: 8px
+      font-size: 14px
+      padding: 0
+  .ymap-container
+    height: 150px
+  .subscribe
+    padding-top: 70px
+    padding-bottom: 70px
+    &-wrapper
+      .subscribe__title
+        margin-top: 0
+        margin-bottom: 30px
+    &__text
     &__title
+      margin-bottom: 0
+      // margin-top: 0
+      font-weight: normal
+      font-size: 28px
+    &__subtitle
+      margin-bottom: 0
+      font-size: 18px
+    &__input-group
+      // height: 50px
+    &__form
+      margin-top: 0
+      width: 260px
+  .reviews
+    padding-top: 35px
+    // padding-bottom: 0
+    &__title
+      // height: 50px
+      font-size: 14px
+      padding-left: 20px
+      padding-right: 20px
+      line-height: 25px
+      margin-bottom: 35px
+    &-slider
+      &__avatar
+        margin-bottom: 5px
+      &__text
+        line-height: 140%
+  .activities
+    padding-top: 0
+    padding-bottom: 35px
+    &__title
+      margin-bottom: 30px
       font-size: 18px
       line-height: 23px
+    &__card
+      min-height: 100px
+      margin-bottom: 25px
+  .card
+    padding-top: 130px
+    height: 240px
+    &__title
+      max-width: 80%
   .footer
+    padding-top: 35px
     &-wrapper
       // grid-template-columns: 320px
-    &__social-network
-      max-width: 250px
+      justify-content: start
+      align-items: start
+    &__social
+      &-links
+        min-width: 80px
+      &-network
+        min-height: 70px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: start
+        margin-top: -10px
+        max-width: 250px
+    &__legal
+      align-self: start
+      order: -2
+      margin-top: -15px
+    &__categories
+      margin-top: -20px
+    &__aditional
+      order: -1
+      margin-top: -25px
+
     &__contact
       &-details
+        font-size: 14px
+        margin-top: -10px
         max-width: 250px
       &-form
         max-width: 250px
+    &__ul
+      margin-left: 0
+    &__text
+      margin-bottom: 30px
+    &__item--mb-2
+      margin-bottom: 12px
+    &__contact-link
+      font-size: 12px
+    &__title--mb-3
+      font-weight: normal
+      margin-bottom: 30px
+    &__form
+      margin-left: 0
+      margin-top: -20px
+      margin-bottom: 0
+    &__input
+      // align-self: start
+    &__message
+      height: 120px
+      width: 100%
+    &__contact-div
+      margin-top: -5px
   .modal
     &__dialog
       max-width: 90%
       padding: 33px 25px
   .bottom-line
+    margin-top: -25px
     width: 270px
 
     &__list
-      flex-direction: column
+      // flex-direction: column
     &__item
-      margin-bottom: 10px
-      margin-right: 0
+      margin-bottom: 0
+      margin-right: 4px
 @media (orientation: landscape) and ( max-height: 480px )
   .modal
     &__dialog

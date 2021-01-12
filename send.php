@@ -30,17 +30,18 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'aglokovich@mail.ru'; // Логин на почте
-    $mail->Password   = 'a1539815398'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'akademglokovich@gmail.com'; // Логин на почте
+    $mail->Password   = 'a1539815'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('aglokovich@mail.ru', 'Академ'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('glok.akademov@gmail.com', 'Академ'); // Адрес самой почты и имя отправителя
     $mail->SMTPKeepAlive = true;
 
     // Получатель письма
     $mail->addAddress('kirill87rabota@gmail.com');  
-   // Ещё один, если нужен  $mail->addAddress('youremail@gmail.com');
+    // $mail->addAddress('kir.ya-a@yandex.ru');
+//    Ещё один, если нужен  
 
 //     // Прикрипление файлов к письму
 // if (!empty($file['name'][0])) {
@@ -70,4 +71,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 header('location: thankyou.html');
