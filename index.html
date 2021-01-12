@@ -97,7 +97,7 @@
               <input
                 type="text"
                 class="form__input search__input"
-                placeholder="search location"
+                placeholder="Search Location"
               />
               <button class="btn btn--primary search__button">
                 <img
@@ -108,25 +108,27 @@
               </button>
             </form>
           </li>
-          <li class="navbar-menu__item">
+          <li
+            class="navbar-menu__item navbar-menu__item--mobile-visible navbar-menu__item--mobile-visible-mb-3"
+          >
             <a href="" class="navbar-menu__link">All Deals</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item navbar-menu__item--mobile-visible">
             <a href="" class="navbar-menu__link">Hotels</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item navbar-menu__item--mobile-visible">
             <a href="" class="navbar-menu__link">Activities</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item navbar-menu__item--mobile-visible">
             <a href="" class="navbar-menu__link">Hotel Day Packages</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item navbar-menu__item--mobile-visible">
             <a href="" class="navbar-menu__link">Restaurants</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item navbar-menu__item--mobile-visible">
             <a href="" class="navbar-menu__link">Events</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item navbar-menu__item--mobile-visible">
             <a href="" class="navbar-menu__link">Rodrigues</a>
           </li>
         </ul>
@@ -158,7 +160,10 @@
             <img class="stars-ico" src="img/star.svg" alt="star" />
           </div>
           <h1 class="hotel-name hotel-info__name">grand hilton hotel</h1>
-          <button class="btn btn--primary offer hotel-info__offer">
+          <button
+            data-toggle="modal"
+            class="btn btn--primary offer hotel-info__offer"
+          >
             Flash Offer
           </button>
           <p class="hotel-description">
@@ -167,7 +172,10 @@
           </p>
         </div>
         <!-- /.hotel-info__left -->
-        <div class="btn btn--primary raiting hotel-info__raiting">
+        <div
+          data-toggle="modal"
+          class="btn btn--primary raiting hotel-info__raiting"
+        >
           <span class="raiting__text"> User Rattings </span>
           <span class="raiting__counter"> 4.5/5 </span>
         </div>
@@ -585,7 +593,9 @@ quest"
         </div>
         <!-- * footer__list * -->
         <div class="footer__contact-details">
-          <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+          <h3 class="footer__title footer__title-contact footer__title--mb-3">
+            Contact Details
+          </h3>
           <p class="footer__text">
             Feel free to contact us by phone, email or by our contact form
           </p>
@@ -653,7 +663,9 @@ quest"
         </div>
         <!-- * footer__contact-details -->
         <div class="footer__contact-form">
-          <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+          <h3 class="footer__title footer__title-send footer__title--mb-3">
+            Send us a message
+          </h3>
           <form action="send.php" method="POST" class="footer__form send-form">
             <div class="footer__input-group">
               <input

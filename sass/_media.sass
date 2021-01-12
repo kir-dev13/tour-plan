@@ -498,7 +498,19 @@
       height: 60px
     &-menu
       &--visible
-        top: 70px
+        display: flex
+        flex-direction: column
+        align-items: center
+        top: 65px
+      &__search
+        &--mobile-visible
+          margin: auto
+          margin-top: 5px
+          margin-bottom: 15px
+          width: 82%
+      .navbar-menu__list
+        margin-top: 5px
+
   .container
     // margin: auto
     width: 100%
@@ -530,6 +542,10 @@
       .booking-map-wrapper
         .booking
           padding: 25px 20px
+          &__btn
+            height: 8px
+            font-size: 14px
+            padding: 13px 45px
   .booking
     &__info
       margin-bottom: 5px
@@ -537,10 +553,6 @@
       margin-top: 5px
       justify-content: start
 
-    &__btn
-      height: 8px
-      font-size: 14px
-      padding: 0
   .ymap-container
     height: 170px
   .subscribe
@@ -593,7 +605,7 @@
           margin-left: -90px
   .activities
     padding-top: 0
-    padding-bottom: 40px
+    padding-bottom: 39px
     &-wrapper
     &__title
       margin-bottom: 35px
@@ -613,67 +625,80 @@
     &__title
       max-width: 80%
   .footer
-    padding-top: 35px
+    padding-top: 38px
     &-wrapper
       // grid-template-columns: 320px
       justify-content: start
       align-items: start
+    &__logo
+      width: 96px
+      &-block
+
     &__social
       &-links
-        min-width: 80px
+        min-width: 85px
       &-network
         min-height: 70px
         display: flex
         flex-direction: column
         justify-content: space-between
         align-items: start
-        margin-top: -10px
+        margin-top: 0
         max-width: 250px
     &__legal
       align-self: start
       order: -2
       margin-top: -15px
     &__categories
-      margin-top: -20px
+      margin-top: -10px
     &__aditional
       order: -1
-      margin-top: -25px
+      margin-top: -10px
 
     &__contact
       &-details
         font-size: 14px
-        margin-top: -10px
-        max-width: 250px
+        margin-top: 0
+        max-width: 280px
+        line-height: 160%
       &-form
-        max-width: 250px
+        max-width: 280px
+        margin-top: 10px
     &__ul
       margin-left: 0
     &__text
-      margin-bottom: 30px
+      margin-bottom: 20px
     &__item--mb-2
-      margin-bottom: 12px
+      margin-bottom: 10px
     &__contact-link
-      font-size: 12px
+      font-size: 14px
     &__title--mb-3
       font-weight: normal
-      margin-bottom: 30px
-    &__form
-      margin-left: 0
-      margin-top: -20px
       margin-bottom: 0
-    &__input
-      // align-self: start
+    &__title
+      &-contact
+        margin-bottom: 30px
+      &-send
+        margin-bottom: 15px
+    &__icon-wrapper
+      margin-left: 0
+      min-width: 30px
+    &__form
+      margin-top: 0
+      margin-left: 0
     &__message
-      height: 120px
+      height: 125px
       width: 100%
-    &__contact-div
-      margin-top: -5px
+  &__contact-div
+    margin-top: -5px
+  .send-form
+    margin-left: 0
   .modal
     &__dialog
       max-width: 90%
       padding: 33px 25px
   .bottom-line
-    margin-top: -25px
+    margin-top: -20px
     width: 270px
 
     &__list
