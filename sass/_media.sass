@@ -51,7 +51,6 @@
       &__image
         object-fit: cover
   .hotel-grid
-
     &__booking-map-wrapper
       margin-top: 20px
     .booking-map-wrapper
@@ -120,7 +119,7 @@
     &__item
       margin-left: 0
       margin-right: 20px
-@media ( max-width: 767px )
+@media ( max-width: 768px )
   .container
     max-width: 700px
     width: 95%
@@ -130,7 +129,7 @@
     // height: 100px
     padding: 30px 0
     &__search
-      width: 340px
+      width: 48%
       margin-left: 50px
     &__user
       // margin-right: 10px
@@ -139,7 +138,9 @@
       width: 300px
   .navbar-menu
     padding: 22px 32px 23px 25px
+    &__item
     &__link
+      line-height: 15px
       font-size: 12px
   .hotel
     padding-top: 14px
@@ -173,21 +174,18 @@
       margin-bottom: 45px
     &-slider
       &__item
-        padding: 0 30px 30px
+        max-width: 80%
+        padding: 0 62px 30px
         &:after,&:before
-          display: none
+          display: none\
       &__button
-        top: 45px
+        top: 50%
         &--next
-          right: 50%
-          transform: translate(50%, -50%)
-          margin-right: -65px
+          right: 2px
         &--prev
-          left: 50%
-          transform: scale(-1, -1) translate(50%, 50%)
-          margin-left: -65px
+          left: 2px
   .activities
-    padding-top: 45px
+    padding-top: 25px
     padding-bottom: 50px
     &__card
       min-height: 260px
@@ -208,8 +206,13 @@
       grid-column-gap: 0
     &__logo
       width: 60%
-      grid-column-start: 1
-      grid-column-end: 2
+      // grid-column-start: 0
+      // grid-column-end: 2
+      // grid-row-start: 1
+      &-block
+        grid-column-start: 0
+        grid-column-end: 2
+        grid-row-start: 1
     &__title--inline
       margin-right: 40px
     &__categories
@@ -232,15 +235,31 @@
       &-network
         // margin-right: 35px
         margin-top: 40px
-        grid-column-start: 3
+        margin-left: 90px
+        grid-column-start: 2
         grid-column-end: 6
         // grid-column: span 3
+      &-links
+        min-width: 80px
     &__contact-details
       margin-top: 25px
+    &__text
+      // margin-top: -5px
+      // margin-bottom: 10px
     &__ul
+      // margin-left: 10px
+    &__item--mb-2
+      // margin-bottom: 0
+    &__icon-wrapper
       margin-left: 10px
-    &__contact-form
-      width: 90%
+    &__contact
+      &-details
+        grid-column: span 6
+      &-link
+        // margin-bottom: 0
+      &-form
+        grid-column: span 7
+        width: 90%
     &__form
       justify-content: space-between
     &__input
@@ -248,6 +267,7 @@
         flex-basis: 47%
   .bottom-line
     margin-top: 15px
+    grid-column-end: 8
 @media ( max-width: 630px )
   body
     padding-top: 78px
@@ -401,6 +421,20 @@
     padding-top: 30px
   .card
     width: 100%
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+      &__button
+        top: 45px
+        &--next
+          right: 50%
+          transform: translate(50%, -50%)
+          margin-right: -65px
+        &--prev
+          left: 50%
+          transform: scale(-1, -1) translate(50%, 50%)
+          margin-left: -65px
   .footer
     padding-bottom: 21px
     &-wrapper
@@ -528,16 +562,23 @@
     // padding-bottom: 0
     &__title
       // height: 50px
+
       font-size: 14px
       padding-left: 20px
       padding-right: 20px
       line-height: 25px
       margin-bottom: 35px
+
     &-slider
+      &__item
+        max-width: 100%
+
       &__avatar
         margin-bottom: 5px
       &__text
-        line-height: 140%
+        font-size: 12px
+        line-height: 160%
+        text-align: left
   .activities
     padding-top: 0
     padding-bottom: 35px
@@ -625,6 +666,7 @@
 @media (orientation: landscape) and ( max-height: 480px )
   .modal
     &__dialog
+      top: 50%
       max-height: 100%
       overflow-y: auto
 @media (orientation: landscape) and ( max-height: 480px )
